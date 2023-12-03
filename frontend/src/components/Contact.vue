@@ -66,7 +66,7 @@
               <img
                 src="../assets/myLogo/jasonLogo.jpg"
                 alt="About Me Image"
-                class="myLogo img-fluid rounded-circle"
+                class="myLogo jason-logo img-fluid rounded-circle"
               />
               <!-- Social Media Links -->
               <div class="social-icons text-center">
@@ -245,6 +245,13 @@ export default {
   height: 200px;
 }
 
+.jason-logo:hover {
+  cursor: pointer;
+  content: url("../assets/img/kramer.gif");
+  width: 200px;
+  height: 200px;
+}
+
 /* Trying to make name more bold */
 /* #name-text {
   font-weight: bolder;
@@ -253,8 +260,6 @@ export default {
 /* Second profile */
 
 .second-section {
-  border: 3px solid pink;
-
   margin-top: 50px;
 }
 
