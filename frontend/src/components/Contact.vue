@@ -68,6 +68,8 @@
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input
+                v-model="email"
+                @keydown.enter.prevent="handleEnterKey"
                 type="email"
                 class="form-control"
                 id="email"
@@ -79,6 +81,8 @@
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
               <textarea
+                v-model="message"
+                @keydown.enter.prevent="handleEnterKey"
                 class="form-control"
                 id="message"
                 name="message"
@@ -134,14 +138,18 @@ export default {
             message: this.message,
           }),
         });
-
         const data = await response.json();
-
         this.email = "";
         this.message = "";
         this.submitted = true;
       } catch (error) {
         console.error("Error:", error);
+      }
+    },
+    handleEnterKey(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        this.submitForm();
       }
     },
   },
