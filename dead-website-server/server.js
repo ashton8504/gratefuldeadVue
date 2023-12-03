@@ -12,9 +12,8 @@ app.use(
 );
 app.get("/api/setlist", async (req, res) => {
   try {
-    const year = req.query.year; // Extract the 'year' query parameter
+    const year = req.query.year;
 
-    // Make a request to the Setlist API
     const { data } = await axios.get(
       "https://api.setlist.fm/rest/1.0/artist/6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6/setlists",
       {
@@ -25,13 +24,11 @@ app.get("/api/setlist", async (req, res) => {
       }
     );
 
-    // Filter data based on the 'year' query parameter
     const filteredSetlists = year
       ? data.setlist.filter((setlist) => {
-          // Assuming 'eventDate' contains the year information
           return setlist.eventDate.includes(year);
         })
-      : data.setlist; // If 'year' is not provided, return all setlists
+      : data.setlist;
 
     res.json(filteredSetlists);
   } catch (error) {
