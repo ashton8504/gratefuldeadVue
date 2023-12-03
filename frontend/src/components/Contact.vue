@@ -95,6 +95,7 @@
               src="../assets/img/thankYouJerry.jpg"
               alt="Thank You"
               class="thankYou"
+              v-show="showImage"
             />
           </div>
         </div>
@@ -117,6 +118,7 @@ export default {
       email: "",
       message: "",
       submitted: false,
+      showImage: true,
     };
   },
   methods: {
