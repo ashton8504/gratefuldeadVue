@@ -64,7 +64,7 @@
       <div class="row">
         <div class="col-md-6 contact-form">
           <h2 class="contact-heading">Contact Me</h2>
-          <form action="#" method="POST">
+          <form @submit.prevent="submitForm" v-if="!submitted">
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input
@@ -89,6 +89,14 @@
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
           </form>
+          <div v-else class="thank-you">
+            <h2>Thanks for submitting!</h2>
+            <img
+              src="../assets/img/thankYouJerry.jpg"
+              alt="Thank You"
+              class="thankYou"
+            />
+          </div>
         </div>
         <div class="col-md-6 contact-image">
           <img
@@ -108,6 +116,7 @@ export default {
     return {
       email: "",
       message: "",
+      submitted: false,
     };
   },
   methods: {
@@ -123,11 +132,12 @@ export default {
             message: this.message,
           }),
         });
-        console.log(response);
+
         const data = await response.json();
-        console.log(data);
+
         this.email = "";
         this.message = "";
+        this.submitted = true;
       } catch (error) {
         console.error("Error:", error);
       }
@@ -206,6 +216,18 @@ export default {
   border-radius: 8px;
   border: 2px solid #0069aa;
   margin-top: 40px;
+}
+
+.thank-you {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.thank-you img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 992px) {

@@ -41,8 +41,13 @@ app.get("/api/setlist", async (req, res) => {
 
 app.post("/contact", (req, res) => {
   const { email, message } = req.body;
-  console.log("Email:", email);
-  console.log("Message:", message);
+
+  // Basic validation
+  if (!email || !message) {
+    return res
+      .status(400)
+      .json({ error: "Email and message are required fields" });
+  }
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -62,10 +67,10 @@ app.post("/contact", (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error("Error sending email:", error);
-      res.status(500).json({ error: "Error sending email" });
+      return res.status(500).json({ error: "Error sending email" });
     } else {
       console.log("Email sent:", info.response);
-      res.status(200).json({ message: "Message received!" });
+      return res.status(200).json({ message: "Message received!" });
     }
   });
 });
