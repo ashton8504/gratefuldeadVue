@@ -174,8 +174,21 @@ export default {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+.about-me-class,
+.contact-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .form-label {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #343a40;
 }
 
 .contact-me {
