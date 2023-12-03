@@ -139,6 +139,8 @@ export default {
             message: this.message,
           }),
         });
+
+        console.log("testing", response);
         const data = await response.json();
         console.log(data);
         this.email = "";

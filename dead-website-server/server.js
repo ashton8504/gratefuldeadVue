@@ -3,15 +3,13 @@ const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.use(express.json());
 
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(express.json());
+app.use(cors({ origin: "*" }));
+
 app.get("/api/setlist", async (req, res) => {
   try {
     const year = req.query.year;
