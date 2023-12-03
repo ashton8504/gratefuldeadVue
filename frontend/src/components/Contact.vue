@@ -3,7 +3,7 @@
     <!-- About Me Section -->
     <div class="about-me">
       <div class="row">
-        <div class="col-md-4">
+        <div id="ashton-contact" class="col-md-4">
           <img
             src="../assets/myLogo/myLogo.jpg"
             alt="About Me Image"
@@ -39,16 +39,28 @@
           </div>
 
           <!-- Second section  -->
-          <div class="second-section">
+          <div id="jason-contact" class="second-section">
             <img
-              src="../assets/myLogo/myLogo.jpg"
+              src="../assets/myLogo/jasonLogo.jpg"
               alt="About Me Image"
               class="myLogo img-fluid rounded-circle"
             />
             <!-- Social Media Links -->
             <div class="social-icons text-center">
               <a
-                href="https://www.linkedin.com/in/ashton-codes/"
+                href="https://github.com/jasonsnod"
+                target="_blank"
+                class="social-icon me-3"
+              >
+                <!-- Add an image for GitHub -->
+                <img
+                  src="../assets/myLogo/github.png"
+                  alt="GitHub"
+                  class="social-image github-image"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jasonsnoddy-programmer-musician/"
                 target="_blank"
                 class="social-icon me-3"
                 id="social-linkedin"
@@ -58,18 +70,6 @@
                   src="../assets/myLogo/linkedin.png"
                   alt="LinkedIn"
                   class="social-image"
-                />
-              </a>
-              <a
-                href="https://github.com/ashton8504"
-                target="_blank"
-                class="social-icon me-3"
-              >
-                <!-- Add an image for GitHub -->
-                <img
-                  src="../assets/myLogo/github.png"
-                  alt="GitHub"
-                  class="social-image github-image"
                 />
               </a>
             </div>
@@ -93,17 +93,15 @@
           </p>
           <h2 class="about-me-class">About:</h2>
           <p>
-            Hello, I'm <span id="name-text">Ashton</span>, an enthusiastic
-            software developer. Completed various advanced courses in web
-            development and continuously engaged in solo projects to enhance
-            expertise. Currently pursuing additional learning opportunities to
-            expand programming skills further.
+            Hello, I'm <span id="name-text">jason</span>, a junior software engineer. 
+            Recently, I have finished Tech Elevator's Full-Stack Developer course.
+            I am currently searching for software engineer jobs focusing on the back-end.
           </p>
           <p>
-            Known for a proactive problem-solving approach and a talent for
-            crafting visually appealing and user-friendly web experiences.
-            Outside of coding, passionate about cycling, Nintendo, guitars,
-            vinyl, raw denim and of course The Grateful Dead.
+            I rely on both my intelligence and will-power to follow through on projects and
+            find the best possible solution to problems I face. I also love playing music, frisbee, 
+            and being in the outdoors with a good book. You'll find me on the side of a mountain reading
+            some good Tolkein.
           </p>
         </div>
       </div>
