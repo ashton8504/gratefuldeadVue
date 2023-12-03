@@ -249,6 +249,7 @@ export default {
   color: #343a40;
   margin-bottom: 2rem;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .image-container {
