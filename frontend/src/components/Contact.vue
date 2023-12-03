@@ -37,43 +37,6 @@
               />
             </a>
           </div>
-
-          <!-- Second section  -->
-          <div id="jason-contact" class="second-section">
-            <img
-              src="../assets/myLogo/jasonLogo.jpg"
-              alt="About Me Image"
-              class="myLogo img-fluid rounded-circle"
-            />
-            <!-- Social Media Links -->
-            <div class="social-icons text-center">
-              <a
-                href="https://github.com/jasonsnod"
-                target="_blank"
-                class="social-icon me-3"
-              >
-                <!-- Add an image for GitHub -->
-                <img
-                  src="../assets/myLogo/github.png"
-                  alt="GitHub"
-                  class="social-image github-image"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jasonsnoddy-programmer-musician/"
-                target="_blank"
-                class="social-icon me-3"
-                id="social-linkedin"
-              >
-                <!-- Add an image for LinkedIn -->
-                <img
-                  src="../assets/myLogo/linkedin.png"
-                  alt="LinkedIn"
-                  class="social-image"
-                />
-              </a>
-            </div>
-          </div>
         </div>
 
         <div class="col-md-8">
@@ -91,24 +54,72 @@
             Outside of coding, passionate about cycling, Nintendo, guitars,
             vinyl, raw denim and of course The Grateful Dead.
           </p>
-          <h2 class="about-me-class">About:</h2>
-          <p>
-            Hello, I'm <span id="name-text">jason</span>, a junior software engineer. 
-            Recently, I have finished Tech Elevator's Full-Stack Developer course.
-            I am currently searching for software engineer jobs focusing on the back-end.
-          </p>
-          <p>
-            I rely on both my intelligence and will-power to follow through on projects and
-            find the best possible solution to problems I face. I also love playing music, frisbee, 
-            and being in the outdoors with a good book. You'll find me on the side of a mountain reading
-            some good Tolkein.
-          </p>
         </div>
       </div>
 
       <hr class="about-me-border" />
-    </div>
+      <div class="about-me">
+        <div class="row">
+          <div id="ashton-contact" class="col-md-4">
+            <!-- Jasons section  -->
+            <div id="jason-contact" class="second-section">
+              <img
+                src="../assets/myLogo/jasonLogo.jpg"
+                alt="About Me Image"
+                class="myLogo img-fluid rounded-circle"
+              />
+              <!-- Social Media Links -->
+              <div class="social-icons text-center">
+                <a
+                  href="https://github.com/jasonsnod"
+                  target="_blank"
+                  class="social-icon me-3"
+                >
+                  <!-- Add an image for GitHub -->
+                  <img
+                    src="../assets/myLogo/github.png"
+                    alt="GitHub"
+                    class="social-image github-image"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/jasonsnoddy-programmer-musician/"
+                  target="_blank"
+                  class="social-icon me-3"
+                  id="social-linkedin"
+                >
+                  <!-- Add an image for LinkedIn -->
+                  <img
+                    src="../assets/myLogo/linkedin.png"
+                    alt="LinkedIn"
+                    class="social-image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-8">
+            <h2 class="about-me-class">About:</h2>
+            <p>
+              Hello, I'm <span id="name-text">jason</span>, a junior software
+              engineer. Recently, I have finished Tech Elevator's Full-Stack
+              Developer course. I am currently searching for software engineer
+              jobs focusing on the back-end.
+            </p>
+            <p>
+              I rely on both my intelligence and will-power to follow through on
+              projects and find the best possible solution to problems I face. I
+              also love playing music, frisbee, and being in the outdoors with a
+              good book. You'll find me on the side of a mountain reading some
+              good Tolkien.
+            </p>
+          </div>
+        </div>
+
+        <hr class="about-me-border" />
+      </div>
+    </div>
     <div class="contact-me">
       <div class="row">
         <div class="col-md-6 contact-form">
