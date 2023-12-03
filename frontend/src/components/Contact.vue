@@ -64,7 +64,7 @@
       <div class="row">
         <div class="col-md-6 contact-form">
           <h2 class="contact-heading">Contact Me</h2>
-          <form @submit.prevent="submitForm" v-if="!submitted">
+          <form @submit.prevent="submitForm" v-if="showForm">
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input
@@ -122,6 +122,7 @@ export default {
       email: "",
       message: "",
       submitted: false,
+      showForm: true,
       showImage: true,
     };
   },
@@ -139,9 +140,17 @@ export default {
           }),
         });
         const data = await response.json();
+        console.log(data);
         this.email = "";
         this.message = "";
         this.submitted = true;
+        this.showForm = false;
+
+        setTimeout(() => {
+          this.showForm = true;
+          this.submitted = false;
+          this.showImage = false;
+        }, 3000);
       } catch (error) {
         console.error("Error:", error);
       }
