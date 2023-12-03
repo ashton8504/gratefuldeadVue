@@ -36,17 +36,68 @@
                 class="social-image github-image"
               />
             </a>
-            <!-- Add more social media icons -->
+          </div>
+
+          <!-- Second section  -->
+          <div class="second-section">
+            <img
+              src="../assets/myLogo/myLogo.jpg"
+              alt="About Me Image"
+              class="myLogo img-fluid rounded-circle"
+            />
+            <!-- Social Media Links -->
+            <div class="social-icons text-center">
+              <a
+                href="https://www.linkedin.com/in/ashton-codes/"
+                target="_blank"
+                class="social-icon me-3"
+                id="social-linkedin"
+              >
+                <!-- Add an image for LinkedIn -->
+                <img
+                  src="../assets/myLogo/linkedin.png"
+                  alt="LinkedIn"
+                  class="social-image"
+                />
+              </a>
+              <a
+                href="https://github.com/ashton8504"
+                target="_blank"
+                class="social-icon me-3"
+              >
+                <!-- Add an image for GitHub -->
+                <img
+                  src="../assets/myLogo/github.png"
+                  alt="GitHub"
+                  class="social-image github-image"
+                />
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="col-md-8">
-          <h2 class="about-me-class">About Me</h2>
+          <h2 class="about-me-class">About:</h2>
           <p>
-            Enthusiastic software developer. Completed various advanced courses
-            in web development and continuously engaged in solo projects to
-            enhance expertise. Currently pursuing additional learning
-            opportunities to expand programming skills further.
+            Hello, I'm <span id="name-text">Ashton</span>, an enthusiastic
+            software developer. Completed various advanced courses in web
+            development and continuously engaged in solo projects to enhance
+            expertise. Currently pursuing additional learning opportunities to
+            expand programming skills further.
+          </p>
+          <p>
+            Known for a proactive problem-solving approach and a talent for
+            crafting visually appealing and user-friendly web experiences.
+            Outside of coding, passionate about cycling, Nintendo, guitars,
+            vinyl, raw denim and of course The Grateful Dead.
+          </p>
+          <h2 class="about-me-class">About:</h2>
+          <p>
+            Hello, I'm <span id="name-text">Ashton</span>, an enthusiastic
+            software developer. Completed various advanced courses in web
+            development and continuously engaged in solo projects to enhance
+            expertise. Currently pursuing additional learning opportunities to
+            expand programming skills further.
           </p>
           <p>
             Known for a proactive problem-solving approach and a talent for
@@ -183,6 +234,19 @@ export default {
   content: url("../assets/img/jerry-garcia.gif");
   width: 200px;
   height: 200px;
+}
+
+/* Trying to make name more bold */
+/* #name-text {
+  font-weight: bolder;
+} */
+
+/* Second profile */
+
+.second-section {
+  border: 3px solid pink;
+
+  margin-top: 50px;
 }
 
 .social-icons {
