@@ -24,7 +24,7 @@
   </div>
   <!-- Band members -->
   <div class="container">
-    <h2 class="text-center mb-4">Grateful Dead Members</h2>
+    <h2 class="text-center mb-4 members-header">Grateful Dead Members</h2>
     <div class="row justify-content-center">
       <!-- Jerry Garcia -->
       <div class="col-md-4 mb-4">
@@ -253,6 +253,16 @@ export default {
   margin-bottom: 2rem;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.members-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .image-container {
