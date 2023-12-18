@@ -339,6 +339,17 @@ p {
   cursor: pointer;
 }
 
+.card {
+  border: 2px solid #0069aa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
 .card-title,
 .card-text {
   text-align: center;
