@@ -65,7 +65,7 @@
             <!-- Jasons section  -->
             <div id="jason-contact" class="second-section">
               <img
-                src="../assets/myLogo/jasonLogo.jpg"
+                src="../assets/myLogo/jasonLogoUpdated.jpg"
                 alt="About Me Image"
                 class="myLogo jason-logo img-fluid rounded-circle"
               />
@@ -121,6 +121,7 @@
         <hr class="about-me-border" />
       </div>
     </div>
+
     <div class="contact-me">
       <div class="row">
         <div class="col-md-6 contact-form">
@@ -233,20 +234,20 @@ export default {
   margin-top: 40px;
 }
 .myLogo {
-  max-width: 70%;
+  max-width: 100%;
   height: auto;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto;
+  margin-bottom: 1px;
 }
 
 #ashton-contact {
-  padding-left: 200px;
-  border: 2px solid pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-
 .ashton-contact {
   margin-top: 80px;
 }
@@ -266,7 +267,7 @@ export default {
 }
 
 .about-me-border {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -360,12 +361,6 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 992px) {
-  .about-me {
-    padding: 20px;
-  }
-}
-
 /* For mobile devices */
 @media (max-width: 768px) {
   #ashton-contact {
@@ -441,6 +436,12 @@ p {
 
   .col-md-6.contact-form {
     width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  #ashton-contact {
+    padding-left: 280px;
   }
 }
 </style>
