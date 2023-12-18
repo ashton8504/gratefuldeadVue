@@ -20,7 +20,7 @@
       />
     </div>
 
-    <p class="lead">Weir everywhere</p>
+    <p class="lead">Weir Everywhere</p>
   </div>
   <!-- Band members -->
   <div class="container">
@@ -262,6 +262,7 @@ export default {
   letter-spacing: 2px;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 150px;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
@@ -303,10 +304,13 @@ export default {
   opacity: 0;
 }
 .lead {
-  font-size: 30px;
-  color: #6c757d;
+  font-size: 38px;
+  font-weight: bold;
+  color: #343a40;
   text-align: center;
   margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  line-height: 1.5;
 }
 
 p {

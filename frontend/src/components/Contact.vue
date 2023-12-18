@@ -69,7 +69,7 @@
                 class="myLogo jason-logo img-fluid rounded-circle"
               />
               <!-- Social Media Links -->
-              <div class="social-icons text-center">
+              <div class="social-icons text-center" id="social-icons">
                 <a
                   href="https://github.com/jasonsnod"
                   target="_blank"
@@ -263,9 +263,13 @@ export default {
   margin-top: 50px;
 }
 
+#social-icons {
+  margin-right: 20px;
+}
+
 .social-icons {
   margin-top: 20px;
-  margin-left: 32px;
+  margin-left: 15px;
   transition: transform 0.5s ease;
 }
 
