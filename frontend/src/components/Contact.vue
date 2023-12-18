@@ -36,13 +36,13 @@
         </div>
 
         <div class="col-md-5 col-xs-12">
-          <h2 class="about-me-class">About:</h2>
+          <h2 class="about-me-class">About</h2>
           <p>
-            Hello, I'm <span id="name-text">Ashton</span>, an enthusiastic
-            software developer. Completed various advanced courses in web
-            development and continuously engaged in solo projects to enhance
-            expertise. Currently pursuing additional learning opportunities to
-            expand programming skills further.
+            Hello, I'm <span id="name-text-ashton">Ashton</span>, an
+            enthusiastic software developer. Completed various advanced courses
+            in web development and continuously engaged in solo projects to
+            enhance expertise. Currently pursuing additional learning
+            opportunities to expand programming skills further.
           </p>
           <p>
             Known for a proactive problem-solving approach and a talent for
@@ -50,15 +50,14 @@
             Outside of coding, passionate about cycling, Nintendo, guitars,
             vinyl, raw denim and of course The Grateful Dead.
           </p>
+          <hr class="about-me-divider" />
         </div>
       </div>
 
-      <hr class="about-me-border" />
-
       <div class="about-me">
         <div class="row">
-          <div id="ashton-contact" class="col-md-4">
-            <div id="jason-contact" class="second-section">
+          <div id="ashton-contact" class="col-md-4 jason-contact">
+            <div class="second-section">
               <img
                 src="../assets/myLogo/jasonLogoUpdated.jpg"
                 alt="About Me Image"
@@ -92,13 +91,12 @@
             </div>
           </div>
 
-          <div class="col-md-5 col-xs-12">
-            <h2 class="about-me-class">About:</h2>
+          <div class="col-md-5 col-xs-12 jason-paragraph">
             <p>
-              Hello, I'm <span id="name-text">Jason</span>, a junior software
-              engineer. Recently, I have finished Tech Elevator's Full-Stack
-              Developer course. I am currently searching for software engineer
-              jobs focusing on the back-end.
+              Hello, I'm <span id="name-text-jason">Jason</span>, a junior
+              software engineer. Recently, I have finished Tech Elevator's
+              Full-Stack Developer course. I am currently searching for software
+              engineer jobs focusing on the back-end.
             </p>
             <p>
               I rely on both my intelligence and will-power to follow through on
@@ -108,9 +106,8 @@
               good Tolkien.
             </p>
           </div>
+          <hr class="about-me-border" />
         </div>
-
-        <hr class="about-me-border" />
       </div>
     </div>
 
@@ -244,6 +241,10 @@ export default {
   margin-top: 80px;
 }
 
+.jason-paragraph {
+  margin-top: 20px;
+}
+
 .myLogo:hover {
   cursor: pointer;
   content: url("../assets/img/jerry-garcia.gif");
@@ -258,13 +259,22 @@ export default {
   height: 200px;
 }
 
+.about-me-divider {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #ee221a;
+  border-bottom: 2px solid #ee221a;
+}
+
 .about-me-border {
   width: 70%;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #1e2d95;
-  border-bottom: 2px solid #1e2d95;
+  color: #0069aa;
+  border-bottom: 2px solid #0069aa;
 }
 
 p {
@@ -272,8 +282,14 @@ p {
 }
 
 /* Trying to make name more bold */
-#name-text {
-  color: orange;
+#name-text-ashton {
+  color: #0069aa;
+  font-weight: bold;
+}
+
+#name-text-jason {
+  color: #ee221a;
+  font-weight: bold;
 }
 
 /* Second profile */
