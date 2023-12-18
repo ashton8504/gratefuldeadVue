@@ -275,7 +275,7 @@ export default {
 }
 
 p {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 /* Trying to make name more bold */
@@ -369,9 +369,9 @@ p {
 /* For mobile devices */
 @media (max-width: 768px) {
   #ashton-contact {
-    padding-left: 0; /* Remove the left padding */
-    border: none; /* Remove the border */
-    text-align: center; /* Center the content */
+    padding-left: 0;
+    border: none;
+    text-align: center;
   }
 
   #ashton-contact img {
