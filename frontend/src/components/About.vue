@@ -19,7 +19,6 @@
         alt="Weir Barbie"
       />
     </div>
-
     <p class="lead">Weir Everywhere</p>
   </div>
   <!-- Band members -->
@@ -571,12 +570,30 @@ ul {
 /* Media Queries for Improved Mobile Responsiveness */
 @media (max-width: 768px) {
   .jumbotron {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    width: 80%;
+    margin-top: 50px;
   }
 
   .image-container {
-    width: 300px;
-    height: 300px;
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lead-paragraph {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
