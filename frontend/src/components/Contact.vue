@@ -228,6 +228,10 @@ export default {
 </script>
 
 <style scoped>
+.profile-page {
+  border: 2px solid pink;
+  margin-top: 40px;
+}
 .myLogo {
   max-width: 70%;
   height: auto;
