@@ -36,15 +36,14 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Jerry Garcia</h5>
-            <p class="card-text">Years Active: 1965 - 1995</p>
             <p class="card-text">
-              Jerry Garcia, a legendary figure in American music, was the
-              founding member and lead guitarist of the iconic band, the
-              Grateful Dead. His intricate guitar playing, soulful vocals, and
-              improvisational skills defined an era of psychedelic rock and folk
-              music. Beyond music, Garcia's enigmatic persona and commitment to
-              artistic exploration left an enduring legacy, captivating
-              audiences with his eclectic style and profound musical influence.
+              A legendary figure in American music, was the founding member and
+              lead guitarist of the iconic band, the Grateful Dead. His
+              intricate guitar playing, soulful vocals, and improvisational
+              skills defined an era of psychedelic rock and folk music. Beyond
+              music, Garcia's enigmatic persona and commitment to artistic
+              exploration left an enduring legacy, captivating audiences with
+              his eclectic style and profound musical influence.
             </p>
           </div>
         </div>
@@ -60,11 +59,11 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Bob Weir</h5>
-            <p class="card-text">Years Active: 1965 - Present</p>
+
             <p class="card-text">
-              Bob Weir, a founding member of the Grateful Dead alongside Jerry
-              Garcia, was the band's rhythm guitarist and vocalist, contributing
-              his distinct playing style and harmonies to their sound. His
+              A founding member of the Grateful Dead alongside Jerry Garcia, was
+              the band's rhythm guitarist and vocalist, contributing his
+              distinct playing style and harmonies to their sound. His
               innovative chord voicings and unconventional approach to rhythm
               guitar were pivotal in shaping the band's unique musical identity.
               Weir's dynamic stage presence and dedication to musical
@@ -85,17 +84,15 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Phil Lesh</h5>
-            <p class="card-text">Years Active: 1965 - 1995</p>
             <p class="card-text">
-              Phil Lesh, the visionary bassist of the Grateful Dead, was
-              integral in crafting the band's melodic and exploratory
-              soundscapes. His intricate bass lines and innovative approach to
-              music theory pushed the boundaries of rock, jazz, and classical
-              influences within the band's improvisational style. Lesh's
-              pioneering use of unconventional scales and harmonic structures
-              not only anchored the Dead's rhythm section but also contributed
-              significantly to their experimental and genre-defying musical
-              legacy.
+              The visionary bassist of the Grateful Dead, was integral in
+              crafting the band's melodic and exploratory soundscapes. His
+              intricate bass lines and innovative approach to music theory
+              pushed the boundaries of rock, jazz, and classical influences
+              within the band's improvisational style. Lesh's pioneering use of
+              unconventional scales and harmonic structures not only anchored
+              the Dead's rhythm section but also contributed significantly to
+              their experimental and genre-defying musical legacy.
             </p>
           </div>
         </div>
@@ -111,12 +108,11 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Bill Kreutzmann</h5>
-            <p class="card-text">Years Active: 1965 - Present</p>
             <p class="card-text">
-              Bill Kreutzmann, the rhythmic heartbeat of the Grateful Dead as
-              their drummer, brought a unique blend of power and finesse to the
-              band's sound. His exceptional ability to merge diverse rhythms and
-              textures created the dynamic foundation upon which the Dead's
+              The rhythmic heartbeat of the Grateful Dead as their drummer,
+              brought a unique blend of power and finesse to the band's sound.
+              His exceptional ability to merge diverse rhythms and textures
+              created the dynamic foundation upon which the Dead's
               improvisations flourished. Kreutzmann's innate sense of groove and
               willingness to explore intricate rhythmic patterns made him an
               indispensable force, contributing immensely to the band's vibrant
@@ -136,13 +132,12 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center">Brent Mydland</h5>
-            <p class="card-text text-center">Years Active: 1979 - 1990</p>
             <p class="card-text">
-              Brent Mydland, the keyboardist and vocalist for the Grateful Dead,
-              added a vibrant layer of soul and depth to the band's sonic
-              tapestry. His versatile playing style, blending rock, blues, and
-              jazz influences, enriched the Dead's sound with poignant melodies
-              and textured harmonies. Mydland's emotive vocals and innovative
+              The keyboardist and vocalist for the Grateful Dead, added a
+              vibrant layer of soul and depth to the band's sonic tapestry. His
+              versatile playing style, blending rock, blues, and jazz
+              influences, enriched the Dead's sound with poignant melodies and
+              textured harmonies. Mydland's emotive vocals and innovative
               keyboard work elevated the band's live performances, contributing
               a new dimension of musical expression to the Grateful Dead's
               repertoire.
@@ -161,17 +156,16 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Ron "Pigpen" McKernan</h5>
-            <p class="card-text">Years Active: 1965 - 1972</p>
             <p class="card-text">
-              Ron "Pigpen" McKernan, an original member of the Grateful Dead,
-              was a vital force in the band, infusing their early years with
-              blues, soul, and a raw, authentic energy. As the vocalist,
-              harmonica player, and occasional keyboardist, his gritty vocals
-              and passionate stage presence added a distinctive edge to the
-              Dead's sound. Pigpen's deep-rooted connection to blues music and
-              his charismatic performances contributed significantly to shaping
-              the band's identity during its formative years, leaving an
-              indelible mark on their musical legacy.
+              An original member of the Grateful Dead, was a vital force in the
+              band, infusing their early years with blues, soul, and a raw,
+              authentic energy. As the vocalist, harmonica player, and
+              occasional keyboardist, his gritty vocals and passionate stage
+              presence added a distinctive edge to the Dead's sound. Pigpen's
+              deep-rooted connection to blues music and his charismatic
+              performances contributed significantly to shaping the band's
+              identity during its formative years, leaving an indelible mark on
+              their musical legacy.
             </p>
           </div>
         </div>
@@ -187,17 +181,15 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Mickey Hart</h5>
-            <p class="card-text">Years Active: 1967 - Present</p>
             <p class="card-text">
-              Mickey Hart, the innovative percussionist of the Grateful Dead,
-              introduced an expansive array of rhythms and textures into the
-              band's music. His mastery of diverse percussion instruments from
-              around the world infused the Dead's sound with a rich tapestry of
-              global influences and hypnotic beats. Hart's relentless
-              exploration of rhythm, coupled with his dedication to
-              ethnomusicology and sonic experimentation, expanded the band's
-              sonic horizons, making him a cornerstone of the Grateful Dead's
-              rhythmic landscape.
+              The innovative percussionist of the Grateful Dead, introduced an
+              expansive array of rhythms and textures into the band's music. His
+              mastery of diverse percussion instruments from around the world
+              infused the Dead's sound with a rich tapestry of global influences
+              and hypnotic beats. Hart's relentless exploration of rhythm,
+              coupled with his dedication to ethnomusicology and sonic
+              experimentation, expanded the band's sonic horizons, making him a
+              cornerstone of the Grateful Dead's rhythmic landscape.
             </p>
           </div>
         </div>
@@ -421,7 +413,6 @@ p {
   min-width: 200px;
   height: auto;
   border-radius: 30px;
-
   transition: transform 0.5s ease;
   cursor: pointer;
 }
@@ -429,7 +420,7 @@ p {
 .card {
   border: 2px solid #0069aa;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -440,6 +431,7 @@ p {
 .card-title,
 .card-text {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .card-title {
