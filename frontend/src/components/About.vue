@@ -433,7 +433,7 @@ p {
 }
 
 .card {
-  border: 2px solid #0069aa;
+  border: 3px solid #0069aa;
   border-radius: 10px;
   box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
