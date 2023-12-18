@@ -1,6 +1,5 @@
 <template>
   <div class="profile-page">
-    <!-- About Me Section -->
     <div class="about-me">
       <div class="row">
         <div id="ashton-contact" class="col-md-4 ashton-contact">
@@ -9,7 +8,6 @@
             alt="About Me Image"
             class="myLogo img-fluid rounded-circle"
           />
-          <!-- Social Media Links -->
           <div class="social-icons text-center">
             <a
               href="https://www.linkedin.com/in/ashton-codes/"
@@ -17,7 +15,6 @@
               class="social-icon me-3"
               id="social-linkedin"
             >
-              <!-- Add an image for LinkedIn -->
               <img
                 src="../assets/myLogo/linkedin.png"
                 alt="LinkedIn"
@@ -29,7 +26,6 @@
               target="_blank"
               class="social-icon me-3"
             >
-              <!-- Add an image for GitHub -->
               <img
                 src="../assets/myLogo/github.png"
                 alt="GitHub"
@@ -62,21 +58,18 @@
       <div class="about-me">
         <div class="row">
           <div id="ashton-contact" class="col-md-4">
-            <!-- Jasons section  -->
             <div id="jason-contact" class="second-section">
               <img
                 src="../assets/myLogo/jasonLogoUpdated.jpg"
                 alt="About Me Image"
                 class="myLogo jason-logo img-fluid rounded-circle"
               />
-              <!-- Social Media Links -->
               <div class="social-icons text-center" id="social-icons">
                 <a
                   href="https://github.com/jasonsnod"
                   target="_blank"
                   class="social-icon me-3"
                 >
-                  <!-- Add an image for GitHub -->
                   <img
                     src="../assets/myLogo/github.png"
                     alt="GitHub"
@@ -89,7 +82,6 @@
                   class="social-icon me-3"
                   id="social-linkedin"
                 >
-                  <!-- Add an image for LinkedIn -->
                   <img
                     src="../assets/myLogo/linkedin.png"
                     alt="LinkedIn"
@@ -336,12 +328,23 @@ p {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  border: 3px solid red;
+  margin-top: 150px;
+  width: 70%;
+  margin: 0 auto;
 }
 .contact-form {
   flex: 1;
-  margin-right: 200px;
+  width: 50%;
 }
+
+.contact-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-right: 90px;
+}
+
 .further-bus {
   max-width: 100%;
   height: auto;

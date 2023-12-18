@@ -8,6 +8,7 @@
     <div class="row">
       <div class="col">
         <h1 class="header-main">The Grateful Dead</h1>
+        <hr class="main-line" />
       </div>
     </div>
 
@@ -38,7 +39,7 @@
           src="../assets/img/gratefulpeanuts.png"
           alt="Image of Grateful Dead as Snoopy and Woodstock"
         />
-        <p>Even Snoopy and Woodstock felt the groove</p>
+        <p class="snoopy">Even Snoopy and Woodstock felt the groove</p>
       </div>
     </div>
   </div>
@@ -100,10 +101,20 @@
 
 .header-main {
   font-family: "GratefulDead", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #bc1218;
   text-align: center;
   margin: 15px auto 10px;
+  margin-top: 40px;
+}
+
+.main-line {
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  color: #1e2d95;
+  border-bottom: 2px solid #1e2d95;
 }
 
 .main-paragraph {
@@ -138,6 +149,10 @@
 p,
 .helpful-header {
   font-family: "Montserrat", sans-serif;
+}
+
+.snoopy {
+  margin-top: 10px;
 }
 
 .col {
