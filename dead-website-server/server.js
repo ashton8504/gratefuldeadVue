@@ -1,24 +1,33 @@
+require("dotenv").config();
+const express = require("express");
+const axios = require("axios");
+const cors = require("cors");
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+const SETLIST_API_KEY = process.env.SETLIST_API_KEY;
+const artistMbid = "6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6";
+
+app.use(express.json());
+app.use(cors({ origin: "*" }));
+
 app.get("/api/setlist", async (req, res) => {
   try {
     const { year } = req.query;
-    const artistMbid = "6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6"; // The Dead's MBID
 
     const { data } = await axios.get(
       `https://api.setlist.fm/rest/1.0/search/setlists?artistMbid=${artistMbid}&p=1&year=${year}`,
       {
         headers: {
           Accept: "application/json",
-          "x-api-key": process.env.SETLIST_API_KEY,
+          "x-api-key": SETLIST_API_KEY,
         },
       }
     );
 
-    const filteredSetlists = data.setlist.filter((setlist) => {
-      const setlistYear = new Date(setlist.eventDate).getFullYear();
-      return setlistYear === parseInt(year);
-    });
+    const setlists = data.setlist || [];
 
-    res.json(filteredSetlists);
+    res.json(setlists);
   } catch (error) {
     console.error(
       "Error fetching Setlist API:",
@@ -26,4 +35,8 @@ app.get("/api/setlist", async (req, res) => {
     );
     res.status(500).send("Error fetching data");
   }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
