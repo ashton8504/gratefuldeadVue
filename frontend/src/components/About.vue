@@ -23,7 +23,10 @@
   </div>
   <!-- Band members -->
   <div class="container">
-    <h2 class="text-center mb-4 members-header">Grateful Dead Members</h2>
+    <h2 class="text-center mb-4 members-header" id="members-header">
+      Grateful Dead Members
+      <hr class="members-line" />
+    </h2>
     <div class="row justify-content-center">
       <!-- Jerry Garcia -->
       <div class="col-md-4 mb-4">
@@ -338,6 +341,10 @@ export default {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
+#members-header {
+  margin-bottom: 60px !important;
+}
+
 .image-container {
   position: relative;
   display: flex;
@@ -454,6 +461,15 @@ p {
   margin-bottom: 25px;
   color: #ee221a;
   border-bottom: 2px solid #ee221a;
+}
+
+.members-line {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  color: #1e2d95;
+  border-bottom: 2px solid #1e2d95;
 }
 
 /* Styles For Search Results */
