@@ -3,7 +3,7 @@
     <!-- About Me Section -->
     <div class="about-me">
       <div class="row">
-        <div id="ashton-contact" class="col-md-4">
+        <div id="ashton-contact" class="col-md-4 ashton-contact">
           <img
             src="../assets/myLogo/myLogo.jpg"
             alt="About Me Image"
@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="col-md-5">
+        <div class="col-md-5 col-xs-12">
           <h2 class="about-me-class">About:</h2>
           <p>
             Hello, I'm <span id="name-text">Ashton</span>, an enthusiastic
@@ -100,7 +100,7 @@
             </div>
           </div>
 
-          <div class="col-md-5">
+          <div class="col-md-5 col-xs-12">
             <h2 class="about-me-class">About:</h2>
             <p>
               Hello, I'm <span id="name-text">Jason</span>, a junior software
@@ -242,6 +242,15 @@ export default {
   margin: 0 auto;
 }
 
+#ashton-contact {
+  padding-left: 200px;
+  border: 2px solid pink;
+}
+
+.ashton-contact {
+  margin-top: 80px;
+}
+
 .myLogo:hover {
   cursor: pointer;
   content: url("../assets/img/jerry-garcia.gif");
@@ -257,7 +266,7 @@ export default {
 }
 
 .about-me-border {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -325,6 +334,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 .contact-form {
   flex: 1;
@@ -355,48 +365,82 @@ p {
     padding: 20px;
   }
 }
+
+/* For mobile devices */
 @media (max-width: 768px) {
-  .myLogo {
-    max-width: 50%;
+  #ashton-contact {
+    padding-left: 0; /* Remove the left padding */
+    border: none; /* Remove the border */
+    text-align: center; /* Center the content */
   }
 
-  .about-me {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
+  #ashton-contact img {
+    max-width: 70%;
+    height: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+  }
+  .profile-page {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-me-class {
-    margin-top: 30px;
-  }
-  .about-me-border {
-    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
-    width: 80%;
-    margin: 20px auto;
+    display: none;
   }
 
-  .contact-me {
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .contact-heading {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-
-  .social-icon {
-    margin-right: 40px;
-  }
   .social-icons {
-    margin-top: 20px;
-    margin-left: 30px;
+    display: none;
+  }
+
+  .about-me,
+  .col-md-5 {
+    padding: 0 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   #email,
   #message {
+    width: calc(100% - 30px);
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .btn-primary {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
+  }
+
+  .about-me-class,
+  .contact-heading,
+  .form-label {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .contact-form {
+    margin-right: 0;
+  }
+
+  .contact-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .col-md-6.contact-form {
+    width: 100%;
   }
 }
 </style>
