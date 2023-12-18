@@ -467,6 +467,8 @@ p {
 .about-line {
   width: 75%;
   margin: 0 auto;
+  color: #0069aa;
+  border-bottom: 2px solid #0069aa;
 }
 
 .members-line {
