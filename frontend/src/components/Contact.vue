@@ -336,6 +336,7 @@ p {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  border: 3px solid red;
 }
 .contact-form {
   flex: 1;
