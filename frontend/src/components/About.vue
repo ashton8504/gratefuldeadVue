@@ -36,6 +36,7 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Jerry Garcia</h5>
+            <hr class="card-line" />
             <p class="card-text">
               A legendary figure in American music, was the founding member and
               lead guitarist of the iconic band, the Grateful Dead. His
@@ -59,7 +60,7 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Bob Weir</h5>
-
+            <hr class="card-line" />
             <p class="card-text">
               A founding member of the Grateful Dead alongside Jerry Garcia, was
               the band's rhythm guitarist and vocalist, contributing his
@@ -84,6 +85,7 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Phil Lesh</h5>
+            <hr class="card-line" />
             <p class="card-text">
               The visionary bassist of the Grateful Dead, was integral in
               crafting the band's melodic and exploratory soundscapes. His
@@ -108,6 +110,7 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Bill Kreutzmann</h5>
+            <hr class="card-line" />
             <p class="card-text">
               The rhythmic heartbeat of the Grateful Dead as their drummer,
               brought a unique blend of power and finesse to the band's sound.
@@ -132,6 +135,7 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center">Brent Mydland</h5>
+            <hr class="card-line" />
             <p class="card-text">
               The keyboardist and vocalist for the Grateful Dead, added a
               vibrant layer of soul and depth to the band's sonic tapestry. His
@@ -156,6 +160,7 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Ron "Pigpen" McKernan</h5>
+            <hr class="card-line" />
             <p class="card-text">
               An original member of the Grateful Dead, was a vital force in the
               band, infusing their early years with blues, soul, and a raw,
@@ -181,6 +186,7 @@
           />
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Mickey Hart</h5>
+            <hr class="card-line" />
             <p class="card-text">
               The innovative percussionist of the Grateful Dead, introduced an
               expansive array of rhythms and textures into the band's music. His
@@ -310,6 +316,7 @@ export default {
   font-family: "Montserrat", sans-serif;
   width: 50%;
   margin: 0 auto;
+  margin-top: 90px;
 }
 
 .display-4 {
@@ -322,8 +329,8 @@ export default {
 }
 
 .members-header {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-family: "GratefulDead", sans-serif;
+  font-size: 80px;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
@@ -431,7 +438,7 @@ p {
 .card-title,
 .card-text {
   text-align: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .card-title {
@@ -439,6 +446,15 @@ p {
   font-weight: bold;
   color: #343a40;
   text-shadow: 1px 1px 2px rgba(128, 122, 122, 0.4);
+}
+
+.card-line {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  color: #ee221a;
+  border-bottom: 2px solid #ee221a;
 }
 
 /* Styles For Search Results */
