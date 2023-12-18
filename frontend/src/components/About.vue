@@ -132,6 +132,9 @@
       </div>
     </div>
   </div>
+  <div class="centered-line">
+    <hr />
+  </div>
 
   <!-- Setlist API Section -->
   <div class="container mt-5">
@@ -426,6 +429,20 @@ ul {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
+}
+
+.centered-line {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.centered-line hr {
+  border: none;
+  height: 2px;
+  background-color: black;
+  width: 100%;
 }
 
 /* Media Queries for Improved Mobile Responsiveness */

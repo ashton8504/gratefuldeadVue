@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue";
-import About from "./components/About.vue";
+import Navbar from "@/components/Navbar.vue";
+import About from "@/components/About.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
@@ -24,6 +24,10 @@ export default {
 
 <style scoped>
 /* Global styles for the entire app */
+
+* {
+  box-sizing: border-box;
+}
 body,
 html {
   margin: 0;
