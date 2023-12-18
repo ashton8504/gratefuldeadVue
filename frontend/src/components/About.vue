@@ -233,7 +233,8 @@
 
     <!-- Display search results -->
     <div v-if="searchResults.length">
-      <h2 class="text-center mb-4">Search Results</h2>
+      <h2 class="text-center mb-4">Setlists</h2>
+      <hr />
       <div class="search-results">
         <div
           v-for="(setlistItem, index) in searchResults"
@@ -255,6 +256,7 @@
           </div>
         </div>
       </div>
+      <hr />
     </div>
   </div>
 </template>
@@ -494,6 +496,12 @@ input[type="number"] {
 h2.text-center {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
+  text-align: center;
+  color: #1e90ff; /* Change the color to the one that stands out more */
+  font-size: 2.5rem; /* Increase font size */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Add letter spacing */
+  margin-bottom: 20px; /* Adjust margin bottom */
 }
 .search-results {
   display: flex;
