@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-5">
           <h2 class="about-me-class">About:</h2>
           <p>
             Hello, I'm <span id="name-text">Ashton</span>, an enthusiastic
@@ -58,6 +58,7 @@
       </div>
 
       <hr class="about-me-border" />
+
       <div class="about-me">
         <div class="row">
           <div id="ashton-contact" class="col-md-4">
@@ -99,10 +100,10 @@
             </div>
           </div>
 
-          <div class="col-md-8">
+          <div class="col-md-5">
             <h2 class="about-me-class">About:</h2>
             <p>
-              Hello, I'm <span id="name-text">jason</span>, a junior software
+              Hello, I'm <span id="name-text">Jason</span>, a junior software
               engineer. Recently, I have finished Tech Elevator's Full-Stack
               Developer course. I am currently searching for software engineer
               jobs focusing on the back-end.
@@ -229,7 +230,6 @@ export default {
 
 <style scoped>
 .profile-page {
-  border: 2px solid pink;
   margin-top: 40px;
 }
 .myLogo {
@@ -256,10 +256,23 @@ export default {
   height: 200px;
 }
 
+.about-me-border {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #1e2d95;
+  border-bottom: 2px solid #1e2d95;
+}
+
+p {
+  font-size: 23px;
+}
+
 /* Trying to make name more bold */
-/* #name-text {
-  font-weight: bolder;
-} */
+#name-text {
+  color: orange;
+}
 
 /* Second profile */
 
@@ -315,7 +328,7 @@ export default {
 }
 .contact-form {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 200px;
 }
 .further-bus {
   max-width: 100%;
