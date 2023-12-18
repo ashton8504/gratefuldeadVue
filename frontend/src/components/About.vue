@@ -6,7 +6,7 @@
       Once in awhile you get shown the light, in the strangest of places if you
       look at it right
     </p>
-    <hr class="my-4" />
+    <hr class="about-line" />
     <div class="image-container">
       <img
         class="front-image"
@@ -204,9 +204,8 @@
       </div>
     </div>
   </div>
-  <div class="centered-line">
-    <hr />
-  </div>
+
+  <hr class="members-line" />
 
   <!-- Setlist API Section -->
   <div class="container mt-5">
@@ -358,6 +357,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  margin-top: 60px;
 }
 
 .front-image,
@@ -435,6 +435,7 @@ p {
   border-radius: 10px;
   box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  max-width: 100%;
 }
 
 .card:hover {
@@ -455,21 +456,26 @@ p {
 }
 
 .card-line {
-  width: 85%;
+  width: 45%;
   margin: 0 auto;
   margin-top: 5px;
   margin-bottom: 25px;
-  color: #ee221a;
-  border-bottom: 2px solid #ee221a;
+  color: #0069aa;
+  border-bottom: 2px solid #0069aa;
+}
+
+.about-line {
+  width: 75%;
+  margin: 0 auto;
 }
 
 .members-line {
-  width: 85%;
+  width: 60%;
   margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 12px;
   margin-bottom: 25px;
-  color: #1e2d95;
-  border-bottom: 2px solid #1e2d95;
+  color: #ee221a;
+  border-bottom: 2px solid #ee221a;
 }
 
 /* Styles For Search Results */
@@ -530,12 +536,12 @@ h2.text-center {
 }
 
 .centered-input {
-  width: 100%;
+  width: 50% !important;
   padding: 10px;
   font-size: 1.2rem;
   border: 2px solid #2064a0;
   border-radius: 5px;
-  text-align: center;
+  margin: 0 auto;
   margin-bottom: 20px;
   transition: border-color 0.3s ease;
 }

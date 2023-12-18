@@ -101,11 +101,11 @@
 
 .header-main {
   font-family: "GratefulDead", sans-serif;
-  font-size: 3rem;
+  font-size: 70px;
   color: #bc1218;
   text-align: center;
   margin: 15px auto 10px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .main-line {
