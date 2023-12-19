@@ -50,6 +50,22 @@
             Outside of coding, passionate about cycling, Nintendo, guitars,
             vinyl, raw denim and of course The Grateful Dead.
           </p>
+          <div class="d-block d-md-none">
+            <p>
+              <strong class="strong-links">Links:</strong><br />
+              <a href="https://ashton-codes.com/" target="_blank"
+                >Portfolio Website</a
+              >
+              <br />
+              <a
+                href="https://www.linkedin.com/in/ashton-codes/"
+                target="_blank"
+                >LinkedIn</a
+              ><br />
+              <a href="https://github.com/ashton8504" target="_blank">GitHub</a
+              ><br />
+            </p>
+          </div>
           <hr class="about-me-divider" />
         </div>
       </div>
@@ -105,6 +121,23 @@
               good book. You'll find me on the side of a mountain reading some
               good Tolkien.
             </p>
+            <div class="d-block d-md-none">
+              <p>
+                <strong>Links:</strong><br />
+                <!-- PLACEHOLDER FOR YOUR PORTFOLIO WEBSITE -->
+                <!-- <a href="https://github.com/ashton8504" target="_blank"
+                  >Portfolio Website</a
+                >
+                <br /> -->
+                <a
+                  href="https://www.linkedin.com/in/jasonsnoddy-programmer-musician/"
+                  target="_blank"
+                  >LinkedIn</a
+                ><br />
+                <a href="https://github.com/jasonsnod" target="_blank">GitHub</a
+                ><br />
+              </p>
+            </div>
           </div>
           <hr class="about-me-border" />
         </div>
@@ -379,6 +412,27 @@ p {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for mobile view social media links */
+
+.d-block.d-md-none p {
+  font-size: 1.2em;
+}
+
+.d-block.d-md-none p strong {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+.d-block.d-md-none p a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.d-block.d-md-none p a:hover {
+  color: #ff6600; /* Change the color to the hover color you prefer */
+  text-decoration: none; /* Remove underline on hover */
 }
 
 /* For mobile devices */
