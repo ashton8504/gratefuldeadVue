@@ -351,7 +351,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  max-width: 400px;
   height: 400px;
   overflow: hidden;
   border: 2px solid black;
@@ -360,6 +360,11 @@ export default {
   margin-right: auto;
   margin-bottom: 30px;
   margin-top: 60px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
 }
 
 .front-image,
@@ -384,6 +389,7 @@ export default {
 .image-container:hover .front-image {
   opacity: 0;
 }
+
 .lead {
   font-size: 38px;
   font-weight: bold;
@@ -603,14 +609,13 @@ ul {
 @media (max-width: 768px) {
   .jumbotron {
     padding: 3rem 1rem;
-    width: 80%;
+    width: 100%;
     margin-top: 50px;
   }
 
   .image-container {
-    width: 70%;
-    max-width: 300px;
-    height: auto;
+    width: 80%;
+    max-width: auto;
   }
 
   .display-4 {

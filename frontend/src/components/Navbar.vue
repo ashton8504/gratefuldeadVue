@@ -60,4 +60,8 @@ const toggleActive = () => {
 .nav-link:hover {
   color: #ee1d25;
 }
+
+.navbar-nav {
+  text-align: center;
+}
 </style>

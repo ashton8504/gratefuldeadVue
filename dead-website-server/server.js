@@ -8,9 +8,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const SETLIST_API_KEY = process.env.SETLIST_API_KEY;
 const artistMbid = "6faa7ca7-0d99-4a5e-bfa6-1fd5037520c6";
+const EMAIL = process.env.EMAIL;
+const PASSWORD = process.env.PASSWORD;
 
 app.use(express.json());
 app.use(cors({ origin: "*" }));
+
+console.log(EMAIL, PASSWORD);
 
 app.get("/api/setlist", async (req, res) => {
   try {
@@ -40,7 +44,6 @@ app.get("/api/setlist", async (req, res) => {
 
 app.post("/contact", (req, res) => {
   const { email, message } = req.body;
-
   // Basic validation
   if (!email || !message) {
     return res

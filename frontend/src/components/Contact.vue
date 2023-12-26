@@ -326,7 +326,6 @@ p {
 }
 
 /* Second profile */
-
 .second-section {
   margin-top: 50px;
 }
@@ -415,7 +414,6 @@ p {
 }
 
 /* Styles for mobile view social media links */
-
 .d-block.d-md-none p {
   font-size: 1.2em;
 }
@@ -431,8 +429,8 @@ p {
 }
 
 .d-block.d-md-none p a:hover {
-  color: #ff6600; /* Change the color to the hover color you prefer */
-  text-decoration: none; /* Remove underline on hover */
+  color: #ff6600;
+  text-decoration: none;
 }
 
 /* For mobile devices */
@@ -449,9 +447,9 @@ p {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border-radius: 50%;
     margin-bottom: 30px;
   }
+
   .profile-page {
     margin-top: 20px;
     display: flex;
