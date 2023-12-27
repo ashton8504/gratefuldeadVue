@@ -200,6 +200,9 @@
 </template>
 
 <script>
+
+import emailjs from '@emailjs/browser';
+
 export default {
   data() {
     return {
@@ -211,6 +214,10 @@ export default {
     };
   },
   methods: {
+    sendEmail() {
+
+    },
+    
     async submitForm() {
       try {
         const response = await fetch("http://localhost:3000/contact", {
