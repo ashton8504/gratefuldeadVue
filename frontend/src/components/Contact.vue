@@ -148,7 +148,18 @@
       <div class="row">
         <div class="col-md-6 contact-form">
           <h2 class="contact-heading">Contact Me</h2>
-          <form @submit.prevent="submitForm" v-if="showForm">
+
+
+          <form ref="form" @submit.prevent="sendEmail">
+            <label>Name</label>
+            <input type="text" name="user_name">
+            <label>Email</label>
+            <input type="email" name="user_email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send">
+          </form>
+          <!-- <form @submit.prevent="submitForm" v-if="showForm">
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input
@@ -185,7 +196,7 @@
               class="thankYou"
               v-show="showImage"
             />
-          </div>
+          </div> -->
         </div>
         <div class="col-md-6 contact-image">
           <img
