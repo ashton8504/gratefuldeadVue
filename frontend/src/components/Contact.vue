@@ -232,14 +232,7 @@ export default {
         }, (error) => {
             console.log('FAILED...', error.text);
         });
-      
-        this.resetContactForm();
-    },
-
-    resetContactForm() {
-
-    }
-    
+    } 
     // async submitForm() {
     //   try {
     //     const response = await fetch("http://localhost:3000/contact", {
