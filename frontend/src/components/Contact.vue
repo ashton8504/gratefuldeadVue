@@ -150,13 +150,13 @@
           <h2 class="contact-heading">Contact Me</h2>
 
           <form ref="form" @submit.prevent="sendEmail">
-            <label>Name</label>
-            <input type="text" name="user_name">
-            <label>Email</label>
-            <input type="email" name="user_email">
+            <label for="user_name">Name</label>
+            <input type="text" name="user_name" placeholder="Enter Your Name" required>
+            <label for="user_email">Email</label>
+            <input type="email" name="user_email" placeholder="Enter Your Email" required>
             <label>Message</label>
-            <textarea name="message"></textarea>
-            <input type="submit" value="Send">
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+            <input class="btn btn-primary" type="submit" value="Send">
           </form>
 
           <!-- <form @submit.prevent="submitForm" v-if="showForm">
@@ -232,7 +232,13 @@ export default {
         }, (error) => {
             console.log('FAILED...', error.text);
         });
+      
+        this.resetContactForm();
     },
+
+    resetContactForm() {
+
+    }
     
     // async submitForm() {
     //   try {
