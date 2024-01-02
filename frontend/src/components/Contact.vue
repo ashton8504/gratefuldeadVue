@@ -149,7 +149,7 @@
         <div class="col-md-6 contact-form">
           <h2 class="contact-heading">Contact Me</h2>
 
-          <form ref="form" @submit.prevent="sendEmail">
+          <form ref="form" @submit="sendEmail">
             <label for="user_name">Name</label>
             <input type="text" name="user_name" placeholder="Enter Your Name" required>
             <label for="user_email">Email</label>
