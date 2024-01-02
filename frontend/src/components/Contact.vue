@@ -149,7 +149,6 @@
         <div class="col-md-6 contact-form">
           <h2 class="contact-heading">Contact Me</h2>
 
-
           <form ref="form" @submit.prevent="sendEmail">
             <label>Name</label>
             <input type="text" name="user_name">
@@ -159,6 +158,7 @@
             <textarea name="message"></textarea>
             <input type="submit" value="Send">
           </form>
+
           <!-- <form @submit.prevent="submitForm" v-if="showForm">
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
@@ -226,45 +226,50 @@ export default {
   },
   methods: {
     sendEmail() {
-
+      emailjs.sendForm('contactService ', 'contactForm', this.$refs.form, 'K9regd18zJcSFw8bJ')
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
     },
     
-    async submitForm() {
-      try {
-        const response = await fetch("http://localhost:3000/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email: this.email,
-            message: this.message,
-          }),
-        });
+    // async submitForm() {
+    //   try {
+    //     const response = await fetch("http://localhost:3000/contact", {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify({
+    //         email: this.email,
+    //         message: this.message,
+    //       }),
+    //     });
 
-        console.log("testing", response);
-        const data = await response.json();
-        console.log(data);
-        this.email = "";
-        this.message = "";
-        this.submitted = true;
-        this.showForm = false;
+    //     console.log("testing", response);
+    //     const data = await response.json();
+    //     console.log(data);
+    //     this.email = "";
+    //     this.message = "";
+    //     this.submitted = true;
+    //     this.showForm = false;
 
-        setTimeout(() => {
-          this.showForm = true;
-          this.submitted = false;
-          this.showImage = false;
-        }, 3000);
-      } catch (error) {
-        console.error("Error:", error);
-      }
-    },
-    handleEnterKey(event) {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        this.submitForm();
-      }
-    },
+    //     setTimeout(() => {
+    //       this.showForm = true;
+    //       this.submitted = false;
+    //       this.showImage = false;
+    //     }, 3000);
+    //   } catch (error) {
+    //     console.error("Error:", error);
+    //   }
+    // },
+    // handleEnterKey(event) {
+    //   if (event.key === "Enter") {
+    //     event.preventDefault();
+    //     this.submitForm();
+    //   }
+    // },
   },
 };
 </script>
