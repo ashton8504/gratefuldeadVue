@@ -153,7 +153,6 @@
             <div class="row g-3 mb-3">
               <!-- Name Field -->
               <div class="col-md-6">
-                <label for="user_name" class="form-label">Name</label>
                 <input
                   type="text"
                   class="form-control"
@@ -166,7 +165,6 @@
 
               <!-- Email Field -->
               <div class="col-md-6">
-                <label for="user_email" class="form-label">Email</label>
                 <input
                   type="email"
                   class="form-control"
@@ -179,14 +177,13 @@
             </div>
             <!-- Message Field -->
             <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
               <textarea
                 class="form-control"
                 id="message"
                 name="message"
                 rows="6"
-              >
-              </textarea>
+                placeholder="Leave a message...."
+              ></textarea>
             </div>
 
             <!-- Submit Button -->
