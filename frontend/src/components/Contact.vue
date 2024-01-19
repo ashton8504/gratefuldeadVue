@@ -148,55 +148,52 @@
       <div class="row">
         <div class="col-md-6 contact-form">
           <h2 class="contact-heading">Contact Me</h2>
-
           <form ref="form" @submit="sendEmail">
-            <label for="user_name">Name</label>
-            <input type="text" name="user_name" placeholder="Enter Your Name" required>
-            <label for="user_email">Email</label>
-            <input type="email" name="user_email" placeholder="Enter Your Email" required>
-            <label>Message</label>
-            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
-            <input class="btn btn-primary" type="submit" value="Send">
-          </form>
+            <!-- Row for Name and Email Fields -->
+            <div class="row g-3 mb-3">
+              <!-- Name Field -->
+              <div class="col-md-6">
+                <label for="user_name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="user_name"
+                  id="user_name"
+                  placeholder="Enter Your Name"
+                  required
+                />
+              </div>
 
-          <!-- <form @submit.prevent="submitForm" v-if="showForm">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input
-                v-model="email"
-                @keydown.enter.prevent="handleEnterKey"
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="Enter Your Email"
-                required
-              />
+              <!-- Email Field -->
+              <div class="col-md-6">
+                <label for="user_email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="user_email"
+                  id="user_email"
+                  placeholder="Enter Your Email"
+                  required
+                />
+              </div>
             </div>
+            <!-- Message Field -->
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
               <textarea
-                v-model="message"
-                @keydown.enter.prevent="handleEnterKey"
                 class="form-control"
                 id="message"
                 name="message"
-                rows="4"
-                placeholder="Your message..."
-                required
-              ></textarea>
+                rows="6"
+              >
+              </textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send</button>
+
+            <!-- Submit Button -->
+            <div class="mb-3">
+              <input type="submit" class="btn btn-primary" value="Send" />
+            </div>
           </form>
-          <div v-else class="thank-you">
-            <h2>Thanks for submitting!</h2>
-            <img
-              src="../assets/img/thankYouJerry.jpg"
-              alt="Thank You"
-              class="thankYou"
-              v-show="showImage"
-            />
-          </div> -->
         </div>
         <div class="col-md-6 contact-image">
           <img
@@ -211,8 +208,7 @@
 </template>
 
 <script>
-
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 export default {
   data() {
@@ -226,13 +222,22 @@ export default {
   },
   methods: {
     sendEmail() {
-      emailjs.sendForm('contactService ', 'contactForm', this.$refs.form, 'K9regd18zJcSFw8bJ')
-        .then((result) => {
-            console.log('SUCCESS!', result.text);
-        }, (error) => {
-            console.log('FAILED...', error.text);
-        });
-    } 
+      emailjs
+        .sendForm(
+          "contactService ",
+          "contactForm",
+          this.$refs.form,
+          "K9regd18zJcSFw8bJ"
+        )
+        .then(
+          (result) => {
+            console.log("SUCCESS!", result.text);
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    },
     // async submitForm() {
     //   try {
     //     const response = await fetch("http://localhost:3000/contact", {
